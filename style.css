@@ -1,14 +1,15 @@
 *{
     box-sizing: border-box;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 1rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%);  text-decoration: none;}
 
 body{
     font-family: "Rubik";
     font-size: 1em;
     background-color: #f5f0f9;
     margin: 0;
+
 }
 
 div.card-left{
@@ -24,8 +25,8 @@ article.container{
     margin-inline: auto;
     z-index: 1;
     position: absolute;
-    top: -10%;
-    left: 35%;
+    top: -5%;
+    left: 0;
     padding: 5rem 0rem;
     margin-block: 100px;
 }
@@ -35,6 +36,7 @@ article.mobile{
     border-radius: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     padding: 1rem;
+    max-width: 100%;
 }
 
 div.bgc{
@@ -153,17 +155,19 @@ section.input input{
     padding: 0.8rem 1.5rem;
     border-radius: 1.3rem;
     border: 1px solid #ccc;
-    position: relative;
     font-size: 1rem;
+    outline: 1px solid #ccc;
 }
 
-/* pourl'icone dans  lz input */
-
+/* pourl'icone dans  l'input */
+section.input{
+    position: relative;
+}
 section.input i{
     position: absolute;
     max-width:375px;
-    left: 84%;
-    top: 92.5%;
+    left: 88.5%;
+    top: 15%;
     cursor: pointer;
     color: #3f2552;
 }
@@ -182,6 +186,8 @@ article.booking{
     margin-block: 5rem;
     line-height: 2rem;
     text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 article.booking h1{
@@ -196,7 +202,7 @@ article.booking h1{
         margin-inline: auto;
         z-index: 1;
         position: absolute;
-        top: -10%;
+        top: -1%;
         left: 30%;
     }
 
@@ -208,7 +214,7 @@ article.booking h1{
     }
 
     div.flex-x div.column{
-        flex-basis: 30%;
+        flex-basis: 29%;
         position: relative;
     }
    
